@@ -1,0 +1,57 @@
+{
+  "name": "vsc-aurelia-cli",
+  "displayName": "vsc-aurelia-cli",
+  "description": "run aurelia-cli commands from command panel",
+  "version": "0.0.1",
+  "publisher": "ErikLieben",
+  "engines": {
+    "vscode": "^1.4.0"
+  },
+  "categories": [
+    "Other"
+  ],
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#5c2d91",
+		"theme": "dark"
+	},  
+  "activationEvents": [
+    "onCommand:extension.auNew",
+    "onCommand:extension.auGenerate",
+    "onCommand:extension.auTest",
+    "onCommand:extension.auBuild"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.auNew",
+        "title": "au new"
+      },
+      {
+        "command": "extension.auGenerate",
+        "title": "au generate"
+      },
+      {
+        "command": "extension.auBuild",
+        "title": "au build"
+      },
+      {
+        "command": "extension.auTest",
+        "title": "au test"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "run-in-terminal": "0.0.3"
+  }
+}
