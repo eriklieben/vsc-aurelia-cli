@@ -2,7 +2,7 @@
   "name": "vsc-aurelia-cli",
   "displayName": "Aurelia-CLI commands",
   "description": "run aurelia-cli commands from command panel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ErikLieben",
   "engines": {
     "vscode": "^1.4.0"
