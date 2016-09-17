@@ -1,4 +1,4 @@
-# vsc-aurelia-cli README
+# Visual Studio Code plugin for Aurelia-CLI
 
 ## Install
 
