@@ -1,6 +1,6 @@
 {
   "name": "vsc-aurelia-cli",
-  "displayName": "vsc-aurelia-cli",
+  "displayName": "Aurelia-CLI commands",
   "description": "run aurelia-cli commands from command panel",
   "version": "0.0.1",
   "publisher": "ErikLieben",
